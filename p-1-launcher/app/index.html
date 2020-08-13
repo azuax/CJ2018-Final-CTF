@@ -19,6 +19,7 @@
         <p class="center">
             <code>LETNE{flag}</code>
         </p>
+        <p>Todas se encuentran en un archivo en la carpeta <code>/var/flag/</code></p>
         <h2>Listado de servicios vulnerables</h2>
         <table class="the-table">
             <thead>
@@ -60,45 +61,73 @@
                 </tr>
                 <tr>
                     <td>5</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>Code Runner</td>
+                    <td>
+                        Existe un script que corre código PHP.
+                        Tu tarea es poder encontrar la bandera, considerando que se aplicaron consideraciones de seguridad como:
+                        <ul>
+                            <li>Funciones peligrosas deshabilitadas</li>
+                            <li>WAF con ModSecurity</li>
+                        </ul>
+                    </td>
+                    <td><a href="http://172.105.13.44:50400">http://172.105.13.44:50400</a></td>
                 </tr>
                 <tr>
                     <td>6</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>Crypto</td>
+                    <td>
+                        Servicio que utiliza AES/Rjindael 256. Cifra el archivo con la flag con el input ingresado por el usuario.
+                        Tu objetivo es romper el cifrado para obtener la bandera.
+                    </td>
+                    <td>IP: 172.105.13.44, Puerto: 50500</a></td>
                 </tr>
                 <tr>
                     <td>7</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>Pwn</td>
+                    <td>
+                        Existe un binario que calcula la subsecuencia más larga de números de 64 bits con complejidad temporal de O(n^2).
+                        Tu objetivo es pownear y obtener la bandera.
+                    </td>
+                    <td>IP: 172.105.13.44, Puerto: 50600</td>
                 </tr>
                 <tr>
                     <td>8</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>Exif reader</td>
+                    <td>
+                        Esta aplicación se utiliza para leer los datos EXIF dentro de un imagen JPG.
+                        ¿Puedes obtener la bandera?
+                    </td>
+                    <td><a href="http://172.105.13.44:50700">http://172.105.13.44:50700</a></td>
                 </tr>
                 <tr>
                     <td>9</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>HackMe</td>
+                    <td>Este es un sitio web vulnerable. Pero ojo, tiene implementado un WAF con ModSecurity.</td>
+                    <td><a href="http://172.105.13.44:50800">http://172.105.13.44:50800</a></td>
                 </tr>
                 <tr>
                     <td>10</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>Poseidón</td>
+                    <td>Tienes disponible un servicio que permite búsqueda por árboles binarios. </td>
+                    <td>IP: 172.105.13.44, Puerto: 50900</td>
                 </tr>
                 <tr>
                     <td>11</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>Assignment</td>
+                    <td>
+                        Este sitio construído en Laravel permite subir archivos y genera el SHA1 checksum de cada uno de ellos.
+                        Misión: Obtener el flag.
+                    </td>
+                    <td><a href="http://172.105.13.44:51000">http://172.105.13.44:51000</a></td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td>Zeus</td>
+                    <td>
+                        Dispones de un servicio de base de datos del tipo Key-Value, como un Redis o Memcache.
+                        Debes usar reversing para entender cómo se almacenan los datos y poder comprometerlo para obtener la flag.
+                    </td>
+                    <td>IP: 172.105.13.44, Puerto: 51100</td>
                 </tr>
             </tbody>
         </table>    

@@ -25,7 +25,7 @@ COPY src/usr/bin/gs /usr/bin/gs
 
 # Flag placeholder
 RUN mkdir /var/flag
-RUN printf "CJ2018{flag}" > /var/flag/00000000000000000000000000000000
+RUN printf "LETNE{40d53db0f154679cac48ff3c6317d1d0}" > /var/flag/a64827e2d3c678223209bd0e3f68baee
 RUN chmod -R 555 /var/flag
 
 # Finishing

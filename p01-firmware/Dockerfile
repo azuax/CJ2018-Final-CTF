@@ -22,7 +22,7 @@ COPY src/app /app
 
 # Flag placeholder
 RUN mkdir /var/flag
-RUN printf "LETNE{ca3c9ff52254f87c29bd572efd80fe23}" > /var/flag/00000000000000000000000000000000
+RUN printf "LETNE{ca3c9ff52254f87c29bd572efd80fe23}" > /var/flag/9406f98947ab90901a6a89e7dbe325b5
 RUN chmod -R 555 /var/flag
 
 # Finishing

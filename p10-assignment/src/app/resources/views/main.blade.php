@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>CJ Assignment Submission</title>
+        <title>Assignment Submission</title>
 
 
         <!-- Styles -->
@@ -78,7 +78,7 @@
             <div class="content">
                 <img src="img/logo.png" width="10%" height="10%">
                 <div class="title m-b-md">
-                    CJ Assignment Submission
+                    Assignment Submission
                 </div>
                 <p>Please upload all of your exploit (.c/.cpp/.py/.sh) as archive (.tar/.zip/.phar)</p>
                 <form class="form" method="POST" action="" enctype="multipart/form-data" id="form">

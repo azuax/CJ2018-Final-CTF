@@ -24,7 +24,7 @@ COPY src/etc/apache2/sites-available/assignment.conf /etc/apache2/sites-availabl
 
 # Flag placeholder
 RUN mkdir /var/flag
-RUN printf "CJ2018{flag}" > /var/flag/00000000000000000000000000000000
+RUN printf "LETNE{ff14eca871fdd23d9230f4c066dd7e7e}" > /var/flag/a228e7cf65b65b1f566fceef18da45cd
 RUN chmod -R 555 /var/flag
 
 # Finishing

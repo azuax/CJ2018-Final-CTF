@@ -37,7 +37,7 @@ RUN echo "disable_functions = exec,passthru,shell_exec,system,popen" >>  /etc/ph
 
 # Flag placeholder
 RUN mkdir /var/flag
-RUN printf "CJ2018{flag}" > /var/flag/00000000000000000000000000000000
+RUN printf "LETNE{207e78fa19c48f2ae1f9221f61cf43c5}" > /var/flag/2436d5060137a90ed4d00c259ef485b7
 RUN chmod -R 555 /var/flag
 
 # Finishing

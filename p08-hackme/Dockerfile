@@ -33,7 +33,7 @@ RUN sed -i "s/SecResponseBodyAccess On/SecResponseBodyAccess Off/" /etc/modsecur
 
 # Flag placeholder
 RUN mkdir /var/flag
-RUN printf "CJ2018{flag}" > /var/flag/00000000000000000000000000000000
+RUN printf "LETNE{8fdcbdd3a1e00cdcee75567c082db6d1}" > /var/flag/82977b35edecfdf9261dbbfe5c8c13f2
 RUN chmod -R 555 /var/flag
 
 # Finishing
