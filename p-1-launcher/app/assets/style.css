@@ -1,0 +1,32 @@
+body{
+    padding: 0 20px;
+}
+
+.content{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.center{
+    text-align: center;
+}
+
+.the-table,
+.the-table th,
+.the-table td{
+    border: 1px solid black;
+}
+
+.the-table>thead td{
+    font-weight: bold;
+}
+
+.the-table td{
+    padding: 2px 5px;
+}
+
+@media (min-width: 1024px){
+    .content{
+        width: 960px;
+    }
+}
