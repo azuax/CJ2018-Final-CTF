@@ -1,4 +1,4 @@
-FROM ubuntu:18.10
+FROM ubuntu:18.04
 
 # Base install
 RUN apt update
@@ -22,7 +22,7 @@ COPY src/app /app
 
 # Flag placeholder
 RUN mkdir /var/flag
-RUN printf "CJ2018{flag}" > /var/flag/00000000000000000000000000000000
+RUN printf "LETNE{ca3c9ff52254f87c29bd572efd80fe23}" > /var/flag/00000000000000000000000000000000
 RUN chmod -R 555 /var/flag
 
 # Finishing

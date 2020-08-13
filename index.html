@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CTF test</title>
+</head>
+<body>
+    <h1>Evaluación inicial CTF</h1>
+
+    <p>Bienvenida a esta evaluación de tus habilidades y conocimientos en los CTFs</p>
+    <p>Existe una serie de servicios a los cuales debes encontrar las vulnerabilidades para obtener las flags asociadas.</p>
+    <p>El formato de las banderas es:</p>
+    <p>
+        <code>LETNE{flag}</code>
+    </p>
+    <h2>Listado de servicios vulnerables</h2>
+    <table>
+        <thead>
+            <tr>
+                <td>ID</td>
+                <td>Nombre</td>
+                <td>Descripción</td>
+                <td>URL / puerto</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Calentamiento</td>
+                <td>Existe un código PHP vulnerable. Encuentra el archivo <code>flag.txt</code> que contiene el código.</td>
+                <td><a href="http://127.0.0.1:50000">http://127.0.0.1:50000</a></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Firmware</td>
+                <td>Existe un servicio que simula ser un firmware con un binario que lo soporta. Necesitas acceder al área de administración para obtener la flag.</td>
+                <td><a href="http://127.0.0.1:50100">http://127.0.0.1:50100</a></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Sandbox</td>
+                <td>
+                    Existe un servicio web que puede correr Shellcode de Linux x64 dentro de un sandbox. Recibe hex strings con las instrucciones encodeadas.
+                    El sandbox es implementado con un filtro de syscall basado en ptrace para bloquear execve y execveat.
+                    Debes encontrar la forma de escribir a stdout y leer un archivo para obtener la bandera.
+                </td>
+                <td><a href="http://127.0.0.1:50200">http://127.0.0.1:50200</a></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Manipulador de imágenes</td>
+                <td>Herramienta en PHP para aplicar modificaciones a imágenes: crop, rotate, resize, grayscale, mirror, flip y efecto sepia.</td>
+                <td>http://127.0.0.1:50300</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>    
+</body>
+</html>
