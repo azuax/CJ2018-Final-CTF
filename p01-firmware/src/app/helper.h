@@ -85,5 +85,5 @@ char* get_system_password()
 
 char* get_system_username()
 {
-    return "admin_";
+    return "admin";
 }
